@@ -125,7 +125,10 @@ def Main_Editor(project_filename):
     add_img_but = tb.Button(editor,text = "Add Images",bootstyle = "success,outline",width = 20,command = add_image)
     w_add_img_but = e_canv.create_window(int(0.9125 * startup.new_res_list[1]),int(0.14 * startup.new_res_list[2]),window = add_img_but)
     
-    e_canv.create_text(int(0.9 * startup.new_res_list[1]),int(0.65 * startup.new_res_list[2]),text = "HI",fill = "#adb5bd")
+    # Message for instruction 
+    e_canv.create_text(int(0.91 * startup.new_res_list[1]),int(0.615 * startup.new_res_list[2]),text = "Instructions",fill = "#adb5bd")
+    e_canv.create_text(int(0.91 * startup.new_res_list[1]),int(0.645 * startup.new_res_list[2]),text = "1. Select an image from above",fill = "#adb5bd")
+    e_canv.create_text(int(0.90625 * startup.new_res_list[1]),int(0.665 * startup.new_res_list[2]),text = "2. Select a tool from toolbar",fill = "#adb5bd")
 
     # This is a common variable for the toolbuttons representing the different images
     img_but_var = IntVar()
