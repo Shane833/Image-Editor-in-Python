@@ -162,7 +162,6 @@ def Main_Editor(project_filename):
     quit_but = Button(editor,text = "Quit",bootstyle = "danger,outline",command = close_editor)
     w_but = e_canv.create_window(int(0.9575 * startup.new_res_list[1]),int(0.05 * startup.new_res_list[2]),window = quit_but)
     
-    print(e_canv.find_withtag("quit_but"))
     editor.mainloop() # End of the Editor's loop
     
 
