@@ -125,10 +125,19 @@ def Main_Editor(project_filename):
     add_img_but = tb.Button(editor,text = "Add Images",bootstyle = "success,outline",width = 20,command = add_image)
     w_add_img_but = e_canv.create_window(int(0.9125 * startup.new_res_list[1]),int(0.14 * startup.new_res_list[2]),window = add_img_but)
     
-       # Message for instruction 
+        # Message for instruction 
+    '''
     e_canv.create_text(int(0.91 * startup.new_res_list[1]),int(0.59 * startup.new_res_list[2]),text = "Instructions",fill = "#adb5bd")
     e_canv.create_text(int(0.91 * startup.new_res_list[1]),int(0.62 * startup.new_res_list[2]),text = "1. Select an image from above",fill = "#adb5bd")
     e_canv.create_text(int(0.90625 * startup.new_res_list[1]),int(0.64 * startup.new_res_list[2]),text = "2. Select a tool from toolbar",fill = "#adb5bd")
+    '''
+    # Crop tool function
+    e_canv.create_text(int(0.91 * startup.new_res_list[1]),int(0.54 * startup.new_res_list[2]),text = "Crop Tool",fill = "#adb5bd")
+    e_canv.create_text(int(0.89 * startup.new_res_list[1]),int(0.60 * startup.new_res_list[2]),text = "First Point (x1,y1)",fill = "#adb5bd")
+    e_canv.create_text(int(0.895 * startup.new_res_list[1]),int(0.64 * startup.new_res_list[2]),text = "Second Point (x2,y2)",fill = "#adb5bd")
+    crop_entry_field = tb.Entry(text = "Project Name",bootstyle = "primary",width = 5)
+    crop_apply_but = tb.Button(editor,text = "Apply",bootstyle = "success,outline",width = 5)
+    w_crop_apply_but = e_canv.create_window(int(0.95 * startup.new_res_list[1]),int(0.715s * startup.new_res_list[2]),window = crop_apply_but)
     
     # This is a common variable for the toolbuttons representing the different images
     img_but_var = IntVar()
